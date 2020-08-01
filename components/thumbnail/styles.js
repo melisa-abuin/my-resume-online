@@ -10,7 +10,7 @@ export const Border = styled.div`
   margin-top: -120px;
   padding: 10px;
   z-index: 1;
-  background-color: ${({ theme }) => theme.colors.silver};
+  background-color: ${({ theme }) => theme.colors.gray};
 `
 export const Container = styled.div`
   width: 100%;
