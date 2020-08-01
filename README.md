@@ -38,7 +38,7 @@ yarn dev
 
 ## Colors
 
-- Colors names found in 'name that color' http://chir.ag/projects/name-that-color
+- Color names found in 'name that color' http://chir.ag/projects/name-that-color
 
 ## Deploy on Vercel
 
