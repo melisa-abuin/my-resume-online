@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import MediaQueries from '../media-queries'
 
 export const Item = styled.a`
   color: ${({ theme }) => theme.colors.white};
