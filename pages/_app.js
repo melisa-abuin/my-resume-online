@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { ThemeProvider } from "styled-components"
+import { ThemeProvider } from "styled-components";
 import theme from '../theme'
 import Head from 'next/head'
 import { I18nextProvider } from "react-i18next"
@@ -26,9 +26,7 @@ function MyApp({ Component, pageProps }) {
             <meta property='og:image' itemProp='image' content='https://my-resume-online.vercel.app/logo.png' key='image' />
             <link rel="shortcut icon" href="/logo.png" />
           </Head>
-          <I18nextProvider i18n={i18next}>
-            <Component {...pageProps} />
-          </I18nextProvider>
+          <Component {...pageProps} />
         </ThemeProvider>
 }
 
