@@ -1,17 +1,11 @@
-import * as component from '../components/homepage'
-import * as education from '../components/education-section'
-import * as knowledge from '../components/knowledge-section'
-
+import * as component from '../components'
 
 export default function Home() {
   return (
-    <>
+    <div>
+      <component.Navbar />
       <component.MainBanner />
       <component.Thumbnail />
-      <component.Summary />
-      <education.ImagesGrid />
-      <knowledge.Banner />
-      <component.Footer />
-    </>
+    </div>
   )
 }

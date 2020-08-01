@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-See the web application: https://my-resume-online-git-develop.mel-a.vercel.app/
-
-=======
->>>>>>> 5908760... Add main components and structure
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -21,7 +16,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Colors
 
-Colors names found in 'name that color' http://chir.ag/projects/name-that-color
+Colors names found on 'name that color' http://chir.ag/projects/name-that-color
 
 ## Deploy on Vercel
 
