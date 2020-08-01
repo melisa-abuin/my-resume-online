@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import MediaQueries from '../media-queries'
 
 export const Body = styled.div`
   text-align: justify;
@@ -8,6 +9,10 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   width: 30%;
+
+  ${MediaQueries.mobile`
+     width: 80vw;
+  `};
 `
 export const Icon = styled.img`
   height: 100px;
@@ -20,10 +25,17 @@ export const Title = styled.p`
   font-weight: bold;
 `
 export const Wrapper = styled.div`
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   display: flex;
+  margin: 0 30px;
   justify-content: space-between;
+
+  ${MediaQueries.mobile`
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  `};
 `
 export const Container = styled.div`
   justify-content: center;
