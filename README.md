@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 See the web application: https://my-resume-online-git-develop.mel-a.vercel.app/
 
+=======
+>>>>>>> 5908760... Add main components and structure
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -25,4 +28,3 @@ Colors names found in 'name that color' http://chir.ag/projects/name-that-color
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
