@@ -16,7 +16,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Colors
 
-Colors names found on 'name that color' http://chir.ag/projects/name-that-color
+Colors names found in 'name that color' http://chir.ag/projects/name-that-color
 
 ## Deploy on Vercel
 

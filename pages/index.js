@@ -6,6 +6,7 @@ export default function Home() {
       <component.Navbar />
       <component.MainBanner />
       <component.Thumbnail />
+      <component.Summary />
     </div>
   )
 }
