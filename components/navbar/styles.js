@@ -5,6 +5,7 @@ export const Item = styled.a`
   font-size: ${({ theme }) => theme.fonts.small8};
   padding: 5px 0;
   margin: 0 12px;
+  cursor: pointer;
 
   &:hover{
     border-bottom: 1px solid ${({ theme }) => theme.colors.aquamarine};
