@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import MediaQueries from '../media-queries'
 
 export const PageContainer = styled.div`
   z-index: 2;
@@ -21,6 +22,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  ${MediaQueries.mobile`
+    width: 100%;
+    height: 100%;
+    padding: 10vw;
+    box-sizing: border-box;
+    border-radius: 0;
+  `};
 `
 export const Header = styled.div`
   display: flex;
