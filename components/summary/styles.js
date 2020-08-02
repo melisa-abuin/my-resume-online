@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
   max-width: 1300px;
   width: 100%;
   display: flex;
-  margin: 0 30px;
+  margin: 40px 30px;
   justify-content: space-between;
 
   ${MediaQueries.mobile`
@@ -41,5 +41,4 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   display: flex;
-  margin-top: 40px;
 `
