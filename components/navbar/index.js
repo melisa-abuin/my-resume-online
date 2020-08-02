@@ -4,9 +4,11 @@ import { Modal } from '../'
 import Link from 'next/link'
 
 export default function Navbar() {
-  const [ modal, setModal ] = useState(0)
+  const [ modal, setModal ] = useState(false)
 
   function handleClick(modal) {
+    const body = document.body
+    modal ? body.classList.remove('no-scroll') :  body.classList.add('no-scroll') 
     setModal(!modal)
   }
   
