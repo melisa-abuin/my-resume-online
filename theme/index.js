@@ -1,5 +1,6 @@
 const theme = {
   colors: {
+    alabaster: '#FAFAFA',
     astral: '#327DA0',
     aquamarine: '#A1DAD7',
     azure: '#0080FF',
