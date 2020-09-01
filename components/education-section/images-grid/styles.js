@@ -2,7 +2,13 @@ import styled, { css } from 'styled-components'
 
 export const Title = styled.h2`
 `
+export const Selected = styled.div`
+  display: ${({ visible }) => visible ? 'flex' : 'none'};
+  justify-content: space-between;
+  flex-direction: row;
+`
 export const Paragraph = styled.p`
+  max-width: 90%;
 `
 export const Image = styled.img`
   width: 100%;
