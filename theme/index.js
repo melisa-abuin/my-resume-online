@@ -4,8 +4,10 @@ const theme = {
     astral: '#327DA0',
     aquamarine: '#A1DAD7',
     azure: '#0080FF',
+    black: '#000000',
     cobalt: '#003DB3',
     gray: '#333333',
+    transparent: 'inherit',
     white: '#FFFFFF'
   },
   fonts: {

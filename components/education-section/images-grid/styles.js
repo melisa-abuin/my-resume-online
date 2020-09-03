@@ -10,8 +10,31 @@ export const Selected = styled.div`
 export const Paragraph = styled.p`
   max-width: 90%;
 `
-export const Image = styled.img`
+export const Rectangle = styled.div`
+  position: absolute;
   width: 100%;
+  z-index: 0;
+  height: 350px;
+  top: -20px;
+  background-color: ${({ theme }) => theme.colors.black};
+`
+export const LinearRectangle = styled.div`
+  position: absolute;
+  width: 150px;
+  z-index: 0;
+  height: 150px;
+  top: -40px;
+  right: -20px;
+  border: 5px solid ${({ theme }) => theme.colors.aquamarine};
+  background-color: ${({ theme }) => theme.colors.transparent};
+`
+export const Image = styled.img`
+  width: 95%;
+  height: 350px;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  left: -10px;
 `
 export const Container = styled.div`
   width: 100%;
@@ -25,6 +48,7 @@ export const Container = styled.div`
 `
 export const Column = styled.div`
   max-width: 50%;
+  position: relative;
 `
 export const Arrow = styled.img`
   height: 60px;
