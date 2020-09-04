@@ -1,35 +1,35 @@
-import { Body, Card, Icon, ImageContaier, Title, Wrapper } from './styles'
-import { useTranslation } from 'react-i18next'
-import { PageSection } from '../../common'
+import { Body, Card, Container, Icon, Item, LinkImage, Title, Wrapper } from './styles'
+import Link from 'next/link'
 
 export default function Summary() {
-  const { t } = useTranslation('common')
-
   return (
-    <PageSection>
+    <Container>
       <Wrapper>
         <Card>
-          <ImageContaier>
-            <Icon url="/education-image.jpg" />
-            <Title>{t("summary.education")}</Title>
-          </ImageContaier>
-          <Body>{t("summary.education-description")}</Body>
+          <Icon src="/education-icon.png" />
+          <Title>Education</Title>
+          <Body> I am a fourth-year computer engineering student, with 25/44 approved subjects and an average of 7,88 </Body>
+          <Link href="/education">
+            <Item>see more <LinkImage src='/chevron-right.png'/></Item>
+          </Link>
         </Card>
         <Card>
-          <ImageContaier>
-            <Icon url="/work-image.jpg" />
-            <Title>{t("summary.work")}</Title>
-          </ImageContaier>
-          <Body>{t("summary.work-description")}</Body>
+          <Icon src="/work-experience-icon.png" />
+          <Title>Work experience</Title>
+          <Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</Body>
+          <Link href="/education">
+            <Item>see more <LinkImage src='/chevron-right.png'/></Item>
+          </Link>
         </Card>
         <Card>
-          <ImageContaier>
-            <Icon url="/skills-image.jpg" />
-            <Title>{t("summary.skills")}</Title>
-          </ImageContaier>
-          <Body>{t("summary.skills-description")}</Body>
+          <Icon src="/skills-icon.png" />
+          <Title>Skills</Title>
+          <Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</Body>
+          <Link href="/education">
+            <Item>see more <LinkImage src='/chevron-right.png'/></Item>
+          </Link>
         </Card>
       </Wrapper>
-    </PageSection>
+    </Container>
   )
 }

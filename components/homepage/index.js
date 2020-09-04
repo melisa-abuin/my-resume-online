@@ -1,4 +1,3 @@
-export { default as Footer } from './footer'
 export { default as MainBanner } from './main-banner'
 export { default as Modal } from './modal'
 export { default as Navbar } from './navbar'
