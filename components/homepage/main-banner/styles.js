@@ -18,11 +18,9 @@ export const Container = styled.div`
 `
 export const Title = styled.h1`
   z-index: 1;
-  font-size: ${({ theme }) => theme.fonts.medium8};
   color: ${({ theme }) => theme.colors.white};
 `
 export const Subtitle = styled.p`
   z-index: 1;
   color: ${({ theme }) => theme.colors.white};
-  font-size: ${({ theme }) => theme.fonts.small6};
 `

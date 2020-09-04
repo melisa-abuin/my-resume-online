@@ -1,5 +1,4 @@
 import { StyledButton } from './styles'
-import PropTypes from 'prop-types'
 
 export default function Button(text) {
     return (
@@ -8,7 +7,4 @@ export default function Button(text) {
       </StyledButton>
     )
 }
-
-Button.propTypes = {
-  text: PropTypes.string
-}
+  
