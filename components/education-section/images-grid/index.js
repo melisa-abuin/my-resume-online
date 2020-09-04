@@ -1,4 +1,4 @@
-import { Arrow, Column, Container, LinearRectangle, Image, Paragraph, Rectangle, Selected, Title, Wrapper } from './styles'
+import { Arrow, Carousel, Column, Container, LinearRectangle, Image, Paragraph, Rectangle, Selected, Title, Wrapper } from './styles'
 import React, { useState } from 'react'
 
 const data = [
@@ -21,20 +21,22 @@ export default function ImagesGrid() {
     <Wrapper>
       <Container>
         <Arrow src='/chevron-shape.png' onClick={() => setVisible(visible === 0  ? numberOfItems - 1 : visible - 1 )} />
-        {data.map(( item, index ) => 
-          <Selected key={index} visible={index === visible}>
-            <Column>
-              <Title>{item.title}</Title>
-              <Paragraph>{item.description}</Paragraph>
-            </Column>
-            <Column>
-              <Rectangle />
-              <Image src={item.image} alt='main-image' />
-              <LinearRectangle />
-            </Column>
-            <Arrow right src='/chevron-shape.png' onClick={() => setVisible(visible === numberOfItems - 1 ? 0 : visible + 1 )} />
-          </Selected>
-        )}
+        <Carousel>
+          {data.map(( item, index ) => 
+            <Selected key={index} visible={index === visible}>
+              <Column>
+                <Title>{item.title}</Title>
+                <Paragraph>{item.description}</Paragraph>
+              </Column>
+              <Column>
+                <Rectangle />
+                <Image src={item.image} alt='main-image' />
+                <LinearRectangle />
+              </Column>
+            </Selected>
+          )}
+        </Carousel>
+        <Arrow right src='/chevron-shape.png' onClick={() => setVisible(visible === numberOfItems - 1 ? 0 : visible + 1 )} />
       </Container>
     </Wrapper>
   )

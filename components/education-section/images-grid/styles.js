@@ -3,12 +3,21 @@ import styled, { css } from 'styled-components'
 export const Title = styled.h2`
 `
 export const Selected = styled.div`
-  display: ${({ visible }) => visible ? 'flex' : 'none'};
   justify-content: space-between;
+  position: absolute;
+  display: flex;
   flex-direction: row;
+  height: ${({ visible }) => visible ? '100%' : '0%'};
+  opacity: ${({ visible }) => visible ? '1' : '0'};
+  transition: height 0s, opacity 3s;
 `
 export const Paragraph = styled.p`
   max-width: 90%;
+`
+export const Carousel = styled.p`
+  position: relative;
+  width: 100%;
+  height: 350px;
 `
 export const Rectangle = styled.div`
   position: absolute;
