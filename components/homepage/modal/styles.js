@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import MediaQueries from '../media-queries'
+import MediaQueries from '../../media-queries'
 
 export const PageContainer = styled.div`
   z-index: 2;
