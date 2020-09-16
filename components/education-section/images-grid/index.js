@@ -1,4 +1,4 @@
-import { Arrow, Carousel, Column, Container, LinearRectangle, Image, Paragraph, Rectangle, Selected, Title, Wrapper } from './styles'
+import { Arrow, Carousel, Circle, Column, Container, LinearCircle, Image, Paragraph, Selected, Title, Wrapper } from './styles'
 import React, { useState } from 'react'
 
 const data = [
@@ -29,9 +29,11 @@ export default function ImagesGrid() {
                 <Paragraph>{item.description}</Paragraph>
               </Column>
               <Column>
-                <Rectangle />
-                <Image src={item.image} alt='main-image' />
-                <LinearRectangle />
+                <Circle>
+                  <LinearCircle>
+                    <Image src={item.image} alt='main-image' />
+                  </LinearCircle>
+                </Circle>
               </Column>
             </Selected>
           )}
