@@ -91,7 +91,6 @@ export const Container = styled.div`
     justify-content: center;
     padding: 0 10px;
   `};
-
 `
 export const Column = styled.div`
   max-width: 50%;
