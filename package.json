@@ -18,6 +18,6 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "babel-plugin-styled-components": "latest"
+    "babel-plugin-styled-components": "^1.11.1"
   }
 }
