@@ -1,5 +1,7 @@
 import * as component from '../components/homepage'
 import * as education from '../components/education-section'
+import * as knowledge from '../components/knowledge-section'
+
 
 export default function Home() {
   return (
@@ -9,6 +11,7 @@ export default function Home() {
       <component.Thumbnail />
       <component.Summary />
       <education.ImagesGrid />
+      <knowledge.Banner />
     </>
   )
 }
