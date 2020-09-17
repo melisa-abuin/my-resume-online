@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import MediaQueries from '../../media-queries'
 
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.black};
@@ -14,10 +13,6 @@ export const LinkImage = styled.img`
 `
 export const Item = styled.label`
   color: ${({ theme }) => theme.colors.white};
-
-  ${MediaQueries.mobile`
-    display: none;
-  `};
 `
 export const Link = styled.a`
   cursor: pointer;
