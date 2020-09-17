@@ -3,13 +3,8 @@ import MediaQueries from '../../media-queries'
 
 export const Container = styled.div`
   display: flex;
-  margin-top: 32px;
   flex-direction: row;
   align-items: center;
-
-  ${MediaQueries.mobile`
-    margin-top: 8px;
-  `};
 `
 export const Image = styled.img`
   ${({ first }) => first &&  css` height: 180px; width: 200px; z-index: 2;`}

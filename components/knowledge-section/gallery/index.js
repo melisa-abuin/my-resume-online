@@ -5,8 +5,8 @@ export default function Gallery() {
       <Container>
         <Image third left src='/saga-course.png'/>
         <Image second left src='/saga-course.png'/>
-        <Image first src='/polo-certificate.png'/>  
-        <Image second right src='/typescript-course.png'/>
+        <Image first src='/saga-course.png'/>  
+        <Image second right src='/saga-course.png'/>
         <Image third right src='/saga-course.png'/>
       </Container>
     )
