@@ -132,7 +132,7 @@ export const Arrow = styled.img`
 export const Wrapper = styled.div`
   margin-top: 100px;
   background-color: ${({ theme }) => theme.colors.alabaster};
-  padding: 50px 0;
+  padding: 150px 0 150px;
   display: flex;
   justify-content: center;
   
