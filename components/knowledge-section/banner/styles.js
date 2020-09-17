@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import MediaQueries from '../../media-queries'
 
 export const Container = styled.div`
   z-index: 1;
@@ -6,13 +7,26 @@ export const Container = styled.div`
   color: ${({ theme }) => theme.colors.white};
   width: 100%;
   max-width: 1300px;
-  height: 300px;
+  height: 400px;
+
+  ${MediaQueries.mobile`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  `};
+
 `
 export const Title = styled.h2`
 `
 export const Description = styled.p`
   word-wrap: break-word;
   max-width: 50%;
+
+  ${MediaQueries.mobile`
+    max-width: 100%;
+  `};
 `
 export const Image = styled.div`
   width: 100%;
@@ -20,8 +34,12 @@ export const Image = styled.div`
   background-size: cover;
   background-image: linear-gradient(to bottom, rgba(39, 39, 39,0.7) 0%, rgba(39, 39, 39,0.7) 100%), url('/desk-image.jpg');
   position: absolute;
-  object-position: top;
   z-index: 0;
+  background-position: top;
+
+  ${MediaQueries.mobile`
+    background-position: top center;
+  `};
 `
 export const Wrapper = styled.div`
   position: relative;

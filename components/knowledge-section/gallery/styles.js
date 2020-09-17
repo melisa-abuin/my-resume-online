@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import MediaQueries from '../../media-queries'
 
 export const Container = styled.div`
   display: flex;
@@ -10,8 +11,14 @@ export const Image = styled.img`
   ${({ second }) => second &&  css` height: 160px; width: 180px; z-index: 1;`}
   ${({ third }) => third &&  css` height: 140px; width: 160px; z-index: 0;`}
   box-shadow: 0px 0px 40px 0.5px ${({ theme }) => theme.colors.black};
-;
 
   ${({ right }) => right &&  css` margin-left: -80px;`}
   ${({ left }) => left &&  css` margin-right: -80px;`}
+
+
+  ${MediaQueries.mobile`
+    ${({ right }) => right &&  css` margin-left: -150px;`}
+    ${({ left }) => left &&  css` margin-right: -150px;`}
+  `};
+
 `
