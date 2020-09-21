@@ -19,7 +19,7 @@ export const Selected = styled.div`
 `
 export const Paragraph = styled.p`
   max-width: 90%;
-  display: inline;
+  white-space: pre-wrap;
 `
 export const Carousel = styled.div`
   position: relative;

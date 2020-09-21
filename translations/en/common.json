@@ -9,31 +9,13 @@
     "university-background": "I am currently in my fourth year of systems engineering. I started my studies in 2016 with the aim of training as a professional with a great theoretical and academic base. In addition, I have successfully passed 24 out of 26 total subjects. \n \nMy studies have helped me to perfect my way of positioning myself in front of a problem, and guiding me to the best solution. In addition, it improved my teamwork and my ability to distribute and delegate tasks working in a completely horizontal hierarchy.",
     "polo-background": "As a student of the National University of La Matanza, I participated in a program where the best qualified engineering students would take a job at the 'polo tecnológico' as developers. \n \nIn this first job I had the opportunity to participate in both research and development, contributing with ideas and knowledge acquired at the university. \n\nThe technology pole is an incredible project where teachers, students and companies work together to create and maintain a development environment that allows the professional and academic growth of the participants at the same time."
   },
-  "jobs": {
-    "jpmorgan-title": "J. P. Morgan Chase & Co",
-    "jpmorgan-description": "In this position I have been working as a Front-end Engineer on a project developed using react & redux with saga as middleware. Which was also tested using Jest and Enzyme I've been able to provide an simple and easy to use interface to the users.",
-    "valtech-title": "Valtech",
-    "valtech-description": "Working as a React Developer I contributed to many web projects such as argentinian airlines and omint, where I had the chance to contribute with my kwnoledge and gain much expertise. What's more I was responsible to develop and deliver funcional applications using React & Redux, working everyday following the SCRUM metodology.",
-    "gyl-title": "G&L Group",
-    "gyl-description": "As a Full Stack Developer I worked on web projects and I+D applications. I was responsible to develop, modelate and deliver functional web apps using PHP for backend, SQL database and React & Redux for front-end."
-  },
-  "general": {
-    "next": "Next",
-    "previous": "Previous",
-    "profile": "My profile",
-    "repository": "Repository",
-    "mail-user": "melisa.abuin@gmail.com",
-    "aboutme": "About Me",
-    "close": "close",
-    "download-pdf": "Download PDF resume"
-  },
   "knowledge": {
     "title": "Always looking for growing",
     "body": "It is known that technology changes day by day, so I always try to keep up to date by taking courses that help me grow and be able to decide between which technologies to apply to new projects."
   },
   "summary": {
     "work-description": "I'm a software developer with 3 years of experience adding value to the products that i contributed.",
-    "skills-description": "I'm a React developer fashoiated for front end technologies. Therefore I am always trying to be up to date with new languages and libraries",
+    "skills-description": "I'm a software developer with 3 years of experience adding value to the products that i contributed.",
     "education-description": " I am a fourth-year computer engineering student, with 25/44 approved subjects and an average of 7,88",
     "work": "Work experience",
     "skills": "Skills",
