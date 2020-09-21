@@ -25,7 +25,7 @@ export default function ImagesGrid() {
       <Container>
         <Swipper onClick={() => setVisible(visible === 0  ? numberOfItems - 1 : visible - 1 )}>
           <Arrow src='/chevron-shape.png' />
-          <Indicator>Next</Indicator>
+          <Indicator>{t("general.next")}</Indicator>
         </Swipper>
         <Carousel>
           {data.map(( item, index ) => 
@@ -45,7 +45,7 @@ export default function ImagesGrid() {
           )}
         </Carousel>
         <Swipper right onClick={() => setVisible(visible === numberOfItems - 1 ? 0 : visible + 1 )}>
-          <Indicator right>Previous</Indicator>
+          <Indicator right>{t("general.previous")}</Indicator>
           <Arrow right src='/chevron-shape.png'  />
         </Swipper>
       </Container>

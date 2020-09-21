@@ -23,7 +23,8 @@ export const Paragraph = styled.p`
   white-space: pre-wrap;
 
   ${MediaQueries.mobile`
-    display: inline
+    display: inline;
+    font-size: 14px;
   `};
 `
 export const Carousel = styled.div`
@@ -32,7 +33,7 @@ export const Carousel = styled.div`
   height: 350px;
   
   ${MediaQueries.mobile`
-    height: 850px;
+    height: 800px;
   `};
 `
 export const Circle = styled.div`
