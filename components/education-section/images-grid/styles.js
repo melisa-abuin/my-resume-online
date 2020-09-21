@@ -13,13 +13,19 @@ export const Selected = styled.div`
   transition: height 0s, opacity 1s;
 
   ${MediaQueries.mobile`
+    height: 100%;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
   `};
 `
 export const Paragraph = styled.p`
   max-width: 90%;
   white-space: pre-wrap;
+
+  ${MediaQueries.mobile`
+    display: inline;
+    font-size: 14px;
+  `};
 `
 export const Carousel = styled.div`
   position: relative;
@@ -27,7 +33,7 @@ export const Carousel = styled.div`
   height: 350px;
   
   ${MediaQueries.mobile`
-    height: 700px;
+    height: 800px;
   `};
 `
 export const Circle = styled.div`
@@ -42,9 +48,10 @@ export const Circle = styled.div`
   border-width: 1px 0 1px 10px;
 
   ${MediaQueries.mobile`
+    max-width: 340px;
     width: 90vw;
     z-index: 0;
-    height: 250;
+    height: 340px;
   `};
 `
 export const LinearCircle = styled.div`
@@ -59,9 +66,10 @@ export const LinearCircle = styled.div`
   border-width: 1px 10px 1px 0;
 
   ${MediaQueries.mobile`
+    max-width: 320px;
     width: 90vw;
     z-index: 0;
-    height: 250;
+    height: 320px;
   `};
 `
 export const Image = styled.img`
@@ -72,9 +80,10 @@ export const Image = styled.img`
   position: relative;
 
   ${MediaQueries.mobile`
+    max-width: 300px;
     width: 80vw;
     z-index: 0;
-    height: 250;
+    height: 300px;
   `};
 `
 export const Container = styled.div`
@@ -100,33 +109,53 @@ export const Column = styled.div`
     text-align: center;
     max-width: 100%;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   `};
 `
 export const Arrow = styled.img`
   height: 60px;
   width: 60px;
+  ${({ right }) => !right && css`transform: rotate(180deg);`}
+
+  ${MediaQueries.mobile`
+    height: 30px;
+    width: 30px;
+  `};
+`
+export const Swipper = styled.div`
   position: absolute;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  z-index: 2;
   top: calc(50% - 10px);
 
   ${({ right }) => right ? 
     css` 
       right: -12px;` : 
     css` 
-      left: -12px;
-      transform: rotate(180deg)`
+      left: -12px;`
   };
 
   ${MediaQueries.mobile`
     top: unset;
-    bottom: 0;
+    bottom: -10px;
 
     ${({ right }) => right ? 
       css` 
-        right: 20%;` : 
+        right: 15%;` : 
       css` 
-        left: 20%;`
+        left: 15%;`
     };
+  `};
+`
+export const Indicator = styled.label`
+  display: none;
+  margin: 0 20px;
+  ${MediaQueries.mobile`
+    display: inline;
   `};
 `
 export const Wrapper = styled.div`
