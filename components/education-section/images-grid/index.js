@@ -1,4 +1,4 @@
-import { Arrow, Carousel, Circle, Column, Container, LinearCircle, Image, Paragraph, Selected, Title, Wrapper } from './styles'
+import { Arrow, Carousel, Circle, Column, Container, Indicator, LinearCircle, Image, Paragraph, Selected, Title, Swipper, Wrapper } from './styles'
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -18,12 +18,15 @@ const data = [
 export default function ImagesGrid() {
   const [ visible, setVisible ] = useState(0)  
   const numberOfItems = data.length
-    const { t } = useTranslation('common')
+  const { t } = useTranslation('common')
 
   return (
     <Wrapper>
       <Container>
-        <Arrow src='/chevron-shape.png' onClick={() => setVisible(visible === 0  ? numberOfItems - 1 : visible - 1 )} />
+        <Swipper onClick={() => setVisible(visible === 0  ? numberOfItems - 1 : visible - 1 )}>
+          <Arrow src='/chevron-shape.png' />
+          <Indicator>Next</Indicator>
+        </Swipper>
         <Carousel>
           {data.map(( item, index ) => 
             <Selected key={index} visible={index === visible}>
@@ -41,7 +44,10 @@ export default function ImagesGrid() {
             </Selected>
           )}
         </Carousel>
-        <Arrow right src='/chevron-shape.png' onClick={() => setVisible(visible === numberOfItems - 1 ? 0 : visible + 1 )} />
+        <Swipper right onClick={() => setVisible(visible === numberOfItems - 1 ? 0 : visible + 1 )}>
+          <Indicator right>Previous</Indicator>
+          <Arrow right src='/chevron-shape.png'  />
+        </Swipper>
       </Container>
     </Wrapper>
   )
