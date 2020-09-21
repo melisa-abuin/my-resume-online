@@ -18,7 +18,7 @@ const data = [
 export default function ImagesGrid() {
   const [ visible, setVisible ] = useState(0)  
   const numberOfItems = data.length
-  const { t } = useTranslation('common')
+    const { t } = useTranslation('common')
 
   return (
     <Wrapper>
