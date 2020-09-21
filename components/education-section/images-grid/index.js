@@ -1,22 +1,25 @@
 import { Arrow, Carousel, Circle, Column, Container, LinearCircle, Image, Paragraph, Selected, Title, Wrapper } from './styles'
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const data = [
   {
-    title: 'Universidad nacional de la matanza', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    title: 'education.university-name', 
+    description: 'education.university-background',
     image: 'https://www.vivieloeste.com.ar/wp-content/uploads/2018/05/unlam.jpg'
   },
   {
-    title: 'Polo tecnologico', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    title: 'education.polo-name', 
+    description: 'education.polo-background',
     image: 'https://bahiacesar.files.wordpress.com/2019/11/polo-tecnologico-unlam.jpg?w=672&h=372&crop=1'
   }
 ]
 
 export default function ImagesGrid() {
   const [ visible, setVisible ] = useState(0)  
-  const numberOfItems = data.length;
+  const numberOfItems = data.length
+  const { t } = useTranslation('common')
+
   return (
     <Wrapper>
       <Container>
@@ -25,8 +28,8 @@ export default function ImagesGrid() {
           {data.map(( item, index ) => 
             <Selected key={index} visible={index === visible}>
               <Column>
-                <Title>{item.title}</Title>
-                <Paragraph>{item.description}</Paragraph>
+                <Title>{t(item.title)}</Title>
+                <Paragraph>{t(item.description)}</Paragraph>
               </Column>
               <Column>
                 <Circle>

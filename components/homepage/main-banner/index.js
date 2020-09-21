@@ -1,8 +1,8 @@
 import { Container, Image, Subtitle, Title } from './styles'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
 export default function MainBanner() {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('common')
 
     return (
       <Container>
