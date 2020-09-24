@@ -52,6 +52,7 @@ export const Wrapper = styled.div`
   display: flex;
   margin: 40px 30px;
   justify-content: space-between;
+  align-items: flex-start;
 
   ${MediaQueries.mobile`
     flex-direction: column;
