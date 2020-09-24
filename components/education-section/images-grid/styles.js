@@ -7,6 +7,7 @@ export const Title = styled.h2`
   ${MediaQueries.mobile`
     font-size: ${({ theme }) => theme.fonts.medium2};
   `};
+
 `
 export const Selected = styled.div`
   justify-content: center;

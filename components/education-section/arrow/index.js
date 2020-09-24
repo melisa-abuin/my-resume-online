@@ -3,6 +3,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import PropTypes from 'prop-types'
 
+
 export default function Arrow({ onClick, right }) {
   const { t } = useTranslation('common')
 

@@ -32,7 +32,6 @@ export const Description = styled.p`
   ${MediaQueries.mobile`
     max-width: 100%;
     font-size: ${({ theme }) => theme.fonts.small6};
-  `};
 `
 export const Image = styled.div`
   width: 100%;
