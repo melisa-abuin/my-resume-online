@@ -22,7 +22,6 @@ export default function ImagesGrid() {
   const numberOfItems = data.length
   const { t } = useTranslation('common')
 
-  console.log(visible)
   return (
     <Wrapper>
       <Container>
