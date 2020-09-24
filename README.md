@@ -1,16 +1,8 @@
-# My Resume Online
-  * This is a web page that presents an online version of my resume, the objective of this project is to show my experience and the way I work at the same time.
-  * To see the web aplication follow this [Link](https://my-resume-abuin-melisa.vercel.app/)
-  ![version](https://img.shields.io/static/v1?label=version&message=v1.2&color=green) ![coverage](https://img.shields.io/static/v1?label=coverage&message=79%&color=green) ![contributions](https://img.shields.io/static/v1?label=contributions&message=welcome&color=green)
+See the web application: https://my-resume-online-git-develop.mel-a.vercel.app/
 
-## Table of contents
-* [Getting Started](#getting-started)
-* [Technologies](#technologies)
-* [Frameworks and libraries](#frameworks-and-libraries)
-* [Colors](#Colors)
-* [Deploy on Vercel](#deploy-on-vercel)
-* [Testing](#testing)
-* [Contributions](#contributions)
+
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -22,33 +14,16 @@ npm run dev
 yarn dev
 ```
 
-## Technologies 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Javascript
-- CSS
-- HTML
-
-## Frameworks and libraries
-
-- Next.js
-- React.js
-- Styled-components
-- Jest
-- Enzyme
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 ## Colors
 
-- Color names found in 'name that color' http://chir.ag/projects/name-that-color
+Colors names found in 'name that color' http://chir.ag/projects/name-that-color
 
 ## Deploy on Vercel
 
-- This application is conected and hosted with Vercel
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Testing
-
-- This app is tested using Jest and Enzyme. Also coverage is over 97%!
-
-## Contributions
-
-* Contributions are welcome. Just create a Fork ([How to do it](http://kbroman.org/github_tutorial/pages/fork.html)), and the open a PR to discuss the changes.
-* Please check coverage in every change you add!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
