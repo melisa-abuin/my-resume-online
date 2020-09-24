@@ -42,8 +42,6 @@ export const Swipper = styled.div`
 export const Indicator = styled.label`
   display: none;
   margin: 0 20px;
-  font-size: ${({ theme }) => theme.fonts.small6};
-
   ${MediaQueries.mobile`
     display: inline;
   `};
