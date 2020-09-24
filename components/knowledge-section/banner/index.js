@@ -1,0 +1,17 @@
+import { Container , Description, Image, Title, Wrapper } from './styles'
+import Gallery from '../gallery'
+import { useTranslation } from 'react-i18next'
+
+export default function Banner() {
+  const { t } = useTranslation('common')
+    return (
+      <Wrapper>
+        <Image />
+        <Container>
+          <Title>{t('knowledge.title')}</Title>
+          <Description>{t('knowledge.body')}</Description>
+          <Gallery />
+        </Container>
+      </Wrapper>
+    )
+}
