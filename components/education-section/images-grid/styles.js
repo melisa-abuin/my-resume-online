@@ -2,6 +2,12 @@ import styled from 'styled-components'
 import MediaQueries from '../../media-queries'
 
 export const Title = styled.h2`
+  font-size: ${({ theme }) => theme.fonts.medium4};
+
+  ${MediaQueries.mobile`
+    font-size: ${({ theme }) => theme.fonts.medium2};
+  `};
+
 `
 export const Selected = styled.div`
   justify-content: center;
@@ -116,7 +122,7 @@ export const Column = styled.div`
 `
 export const Wrapper = styled.div`
   margin-top: 100px;
-  background-color: ${({ theme }) => theme.colors.alabaster};
+  background-color: ${({ theme }) => theme.colors.mercury};
   padding: 150px 0 150px;
   display: flex;
   justify-content: center;

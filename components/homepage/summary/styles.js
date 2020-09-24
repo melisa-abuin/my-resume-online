@@ -32,11 +32,19 @@ export const Item = styled.a`
   cursor: pointer;
   align-self: flex-end;
   margin-top: 20px;
+
+  ${MediaQueries.mobile`
+    font-size: ${({ theme }) => theme.fonts.small6};
+  `};
 `
 export const Title = styled.p`
   text-align: center;
   font-size: ${({ theme }) => theme.fonts.medium4};
   font-weight: bold;
+
+  ${MediaQueries.mobile`
+    font-size: ${({ theme }) => theme.fonts.medium2};
+  `};
 `
 export const Wrapper = styled.div`
   max-width: 1300px;
@@ -44,6 +52,7 @@ export const Wrapper = styled.div`
   display: flex;
   margin: 40px 30px;
   justify-content: space-between;
+  align-items: flex-start;
 
   ${MediaQueries.mobile`
     flex-direction: column;
