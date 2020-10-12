@@ -1,8 +1,7 @@
 {
   "env": {
     "development": {
-      "presets": ["next/babel"],
-      "plugins": ["styled-components"]
+      "presets": ["next/babel"]
     },
     "production": {
       "presets": ["next/babel"]
@@ -12,6 +11,7 @@
       "plugins": [
         "@babel/transform-runtime", "@babel/proposal-class-properties"
       ]
-    }
+    },
+    
   }
 }
