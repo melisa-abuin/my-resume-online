@@ -31,3 +31,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 npm test -> for run tests suites and update snapshots
 
 npm test -- --coverage to check coverage of testing
+
