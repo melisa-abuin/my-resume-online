@@ -4,7 +4,6 @@ import theme from '../theme'
 import Head from 'next/head'
 import { I18nextProvider } from "react-i18next"
 import i18next from "i18next"
-
 import commonEn from "../translations/en/common.json"
 
 i18next.init({
