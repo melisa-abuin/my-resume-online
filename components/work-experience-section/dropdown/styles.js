@@ -7,9 +7,15 @@ export const Container = styled.div`
   width: 100%;
 `
 
-export const Title = styled.div`
-
+export const Title = styled.label`
+  font-size: ${({ theme }) => theme.fonts.medium4};
 `
 export const Body = styled.div`
+
+`
+export const Icon = styled.img`
+
+`
+export const Header = styled.div`
 
 `
