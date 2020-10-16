@@ -12,7 +12,7 @@ export default function Home() {
       <component.Summary />
       <education.ImagesGrid />
       <knowledge.Banner />
-      <experience.Dropdown />
+      <experience.Background />
       <component.Footer />
     </>
   )

@@ -9,6 +9,11 @@
     "university-background": "I am currently in my fourth year of systems engineering. I started my studies in 2016 with the aim of training as a professional with a great theoretical and academic base. In addition, I have successfully passed 24 out of 26 total subjects. \n \nMy studies have helped me to perfect my way of positioning myself in front of a problem, and guiding me to the best solution. In addition, it improved my teamwork and my ability to distribute and delegate tasks working in a completely horizontal hierarchy.",
     "polo-background": "As a student of the National University of La Matanza, I participated in a program where the best qualified engineering students would take a job at the 'polo tecnológico' as developers. \n \nIn this first job I had the opportunity to participate in both research and development, contributing with ideas and knowledge acquired at the university. \n\nThe technology pole is an incredible project where teachers, students and companies work together to create and maintain a development environment that allows the professional and academic growth of the participants at the same time."
   },
+  "jobs": {
+    "jpmorgan": "J. P. Morgan Chase & Co",
+    "valtech": "Valtech",
+    "gyl": "G&L Group"
+  },
   "general": {
     "next": "Next",
     "previous": "Previous",
