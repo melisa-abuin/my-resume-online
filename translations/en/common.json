@@ -10,9 +10,12 @@
     "polo-background": "As a student of the National University of La Matanza, I participated in a program where the best qualified engineering students would take a job at the 'polo tecnológico' as developers. \n \nIn this first job I had the opportunity to participate in both research and development, contributing with ideas and knowledge acquired at the university. \n\nThe technology pole is an incredible project where teachers, students and companies work together to create and maintain a development environment that allows the professional and academic growth of the participants at the same time."
   },
   "jobs": {
-    "jpmorgan": "J. P. Morgan Chase & Co",
-    "valtech": "Valtech",
-    "gyl": "G&L Group"
+    "jpmorgan-title": "J. P. Morgan Chase & Co",
+    "jpmorgan-description": "In this position I have been working as a Front-end Engineer on a project developed using react & redux with saga as middleware. Which was also tested using Jest and Enzyme I've been able to provide an simple and easy to use interface to the users.",
+    "valtech-title": "Valtech",
+    "valtech-description": "Working as a React Developer I contributed to many web projects such as argentinian airlines and omint, where I had the chance to contribute with my kwnoledge and gain much expertise. What's more I was responsible to develop and deliver funcional applications using React & Redux, working everyday following the SCRUM metodology.",
+    "gyl-title": "G&L Group",
+    "gyl-description": "As a Full Stack Developer I worked on web projects and I+D applications. I was responsible to develop, modelate and deliver functional web apps using PHP for backend, SQL database and React & Redux for front-end."
   },
   "general": {
     "next": "Next",

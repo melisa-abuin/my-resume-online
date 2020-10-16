@@ -3,9 +3,21 @@ import { Dropdown } from '..'
 
 
 const jobs = [
-  { title: 'jobs.jpmorgan', description: '' },
-  { title: 'jobs.valtech', description: '' },
-  { title: 'jobs.gyl', description: ''}
+  { 
+    title: 'jobs.jpmorgan-title', 
+    description: 'jobs.jpmorgan-description',
+    tags: []
+  },
+  { 
+    title: 'jobs.valtech-title', 
+    description: 'jobs.valtech-description' ,
+    tags: []
+  },
+  { 
+    title: 'jobs.gyl-title', 
+    description: 'jobs.gyl-description',
+    tags: []
+  }
 ]
 
 export default function Background() {
