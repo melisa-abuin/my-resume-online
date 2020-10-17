@@ -1,6 +1,6 @@
-import { Container, Line, Wrapper } from './styles'
+import { Container, Image,  Wrapper, DropdownGroup } from './styles'
 import { Dropdown } from '..'
-import React, { useState } from 'react'
+import React from 'react'
 
 
 const jobs = [
@@ -20,32 +20,21 @@ const jobs = [
     tags: []
   }
 ]
- /**<Container>
-        {jobs.map((item, index) => (
-          <Dropdown key={index} {...item} />
-        ))}
-    </Container> */
-
-
 
 export default function Background() {
-  const [animation, setAnimation] = useState(0)
-  console.log(animation)  
+
   return (
     <Wrapper>
-      <Line top={60} delay={0.9} animation={animation} onAnimationEnd={() => setAnimation(0)} />
-      <Line top={70} delay={0.7} animation={animation} />
-      <Line top={80} delay={1} animation={animation}/>
-      
-      <Container onClick={() => setAnimation(1)}>
+      <Container>
+      <Image src="/coding-image.jpg" />
+      <DropdownGroup>
         {jobs.map((item, index) => (
-          <Dropdown key={index} {...item} />
+          <Dropdown key={index} {...item} additionalMargin={index*56} />
         ))}
+        </DropdownGroup>
     </Container> 
 
-    <Line bottom={60} delay={0.9} animation={animation} />
-      <Line bottom={70} delay={0.7} animation={animation} />
-      <Line bottom={80} delay={1} animation={animation}/>
+
     </Wrapper>
   )
 }
