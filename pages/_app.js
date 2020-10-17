@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
             <meta property="og:site_name" content='Abuin Melisa' />
             <meta property='og:title' content='Abuin Melisa' key='title' />
             <meta property='og:description' content='A brief recap of my experience and knowledge in a web application' key='description' />
-            <meta property='og:image' itemprop='image' content='https://my-resume-online.vercel.app/logo.png' key='image' />
+            <meta property='og:image' itemProp='image' content='https://my-resume-online.vercel.app/logo.png' key='image' />
             <link rel="shortcut icon" href="/logo.png" />
           </Head>
           <I18nextProvider i18n={i18next}>

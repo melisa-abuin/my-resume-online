@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`arrow renders correctly 1`] = `ShallowWrapper {}`;
+exports[`arrow arrow renders correctly 1`] = `ShallowWrapper {}`;
+
+exports[`arrow arrow renders theme correctly 1`] = `ReactWrapper {}`;
