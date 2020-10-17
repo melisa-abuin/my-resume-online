@@ -1,5 +1,5 @@
-import { Container, Image,  Wrapper, DropdownGroup } from './styles'
-import { Dropdown } from '..'
+import { Container, Image,  Wrapper, Group } from './styles'
+import { JobDescription } from '..'
 import React from 'react'
 
 
@@ -27,11 +27,11 @@ export default function Background() {
     <Wrapper>
       <Container>
       <Image src="/coding-image.jpg" />
-      <DropdownGroup>
+      <Group>
         {jobs.map((item, index) => (
-          <Dropdown key={index} {...item} additionalMargin={index*56} />
+          <JobDescription key={index} {...item} additionalMargin={index*56} />
         ))}
-        </DropdownGroup>
+        </Group>
     </Container> 
 
 

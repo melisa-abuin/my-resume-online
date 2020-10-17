@@ -13,7 +13,7 @@ export const Container = styled.div`
   box-sizing: border-box;
 `
 
-export const DropdownGroup = styled.div`
+export const Group = styled.div`
   display: flex;
   flex-direction: column;
 `
