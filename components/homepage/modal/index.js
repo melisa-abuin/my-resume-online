@@ -1,7 +1,9 @@
-import PropTypes from 'prop-types'
+import PropTypes, { string } from 'prop-types'
 import { Button, Container, Content, Header, Icon, PageContainer, Title } from './styles'
+import { useTranslation } from 'react-i18next'
 
-const Modal = ({ onClick, modalState }) => {
+const Modal = ({ onClick, modalState, title, body }) => {
+  const { t } = useTranslation('common')
 
   function closeModal(event) {
     onClick(event)
@@ -14,14 +16,14 @@ const Modal = ({ onClick, modalState }) => {
     <PageContainer>
       <Container>
         <Header>
-          <Title>About Me</Title>
+          <Title>{title}</Title>
           <Icon src="/cross-icon.png" onClick={() => closeModal(modalState)} />
         </Header>
         <Content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          {body}
         </Content>
         <Button onClick={() => closeModal(modalState)}>
-          Close
+        {t('general.close')}
         </Button>
       </Container>
     </PageContainer>
@@ -32,5 +34,7 @@ export default Modal
 
 Modal.propTypes = {
   modalState: PropTypes.bool,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  body: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 }

@@ -1,13 +1,9 @@
-import { shallow, mount } from 'enzyme'
+import { shallow } from 'enzyme'
 import Button from '..'
-import theme from '../../../theme'
-import 'jest-styled-components'
-import { ThemeProvider } from "styled-components"
-import renderer from 'react-test-renderer'
 
 describe('Button', () => {
   it('button renders correctly', () => {
-    const button = shallow(<Button theme={theme} />)
+    const button = shallow(<Button text="text" />)
     expect(button).toMatchSnapshot()
   })
 })
