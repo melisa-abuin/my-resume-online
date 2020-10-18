@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Item = styled.a`
+export const Link = styled.a`
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fonts.small8};
   padding: 5px 0;
