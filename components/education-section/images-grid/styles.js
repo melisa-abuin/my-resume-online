@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import MediaQueries from '../../media-queries'
+import { PageSection } from '../../common'
 
 export const Title = styled.h2`
   font-size: ${({ theme }) => theme.fonts.medium4};
@@ -93,12 +94,9 @@ export const Image = styled.img`
   `};
 `
 export const Container = styled.div`
-  width: 100%;
-  max-width: 1300px;
   display: flex;
   flex-direction: row;
   position: relative;
-  padding: 0 60px;
   box-sizing: border-box;
   justify-content: space-between;
 
@@ -120,14 +118,13 @@ export const Column = styled.div`
     align-items: center;
   `};
 `
-export const Wrapper = styled.div`
+export const Wrapper = styled(PageSection)`
   margin-top: 100px;
   background-color: ${({ theme }) => theme.colors.mercury};
-  padding: 150px 0 150px;
-  display: flex;
-  justify-content: center;
+  padding: 150px 0;
   
   ${MediaQueries.mobile`
     overflow: hidden;
+    padding: 50px 0;
   `};
 `
