@@ -1,6 +1,6 @@
 import MediaQueries from '../../media-queries'
 import styled from 'styled-components'
-
+import { PageSection } from '../../common'
 
 export const Container = styled.div`
   width: 100%;
@@ -23,7 +23,7 @@ export const Image = styled.img`
   width: 250px;
   box-shadow: 0px 2px 40px 1px ${({ theme }) => theme.colors.gray};
 `
-export const Wrapper =  styled.div`
+export const Wrapper =  styled(PageSection)`
   width: 100%;
   position: relative;
   padding: 80px 0;

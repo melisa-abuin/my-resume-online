@@ -47,8 +47,6 @@ export const Title = styled.p`
   `};
 `
 export const Wrapper = styled.div`
-  max-width: 1300px;
-  width: 100%;
   display: flex;
   margin: 40px 30px;
   justify-content: space-between;
@@ -59,9 +57,4 @@ export const Wrapper = styled.div`
     align-items: center;
     margin: 0;
   `};
-`
-export const Container = styled.div`
-  justify-content: center;
-  width: 100%;
-  display: flex;
 `
