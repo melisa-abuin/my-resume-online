@@ -1,7 +1,6 @@
-import { Container, Item } from './styles'
+import { Container, Link } from './styles'
 import React, { useState } from 'react'
-import { Modal } from '../'
-import Link from 'next/link'
+import { Modal } from '..'
 
 export default function Navbar() {
   const [ modal, setModal ] = useState(false)
@@ -15,10 +14,7 @@ export default function Navbar() {
   return (
     <>
       <Container>
-        <Item onClick={() => handleClick(modal)}>About Me</Item>
-        <Link href="/" passHref>
-          <Item>Download PDF resume</Item>
-        </Link>
+        <Link href="/resume-abuin-melisa.pdf" target="_blank" download >Download PDF resume</Link>
       </Container>
       {modal && <Modal modalState={modal} onClick={handleClick} />}
     </>
