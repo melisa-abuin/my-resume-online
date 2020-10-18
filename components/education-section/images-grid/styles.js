@@ -125,5 +125,6 @@ export const Wrapper = styled(PageSection)`
   
   ${MediaQueries.mobile`
     overflow: hidden;
+    padding: 50px 0;
   `};
 `
