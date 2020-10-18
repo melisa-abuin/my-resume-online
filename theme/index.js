@@ -8,6 +8,7 @@ const theme = {
     cobalt: '#003DB3',
     gray: '#333333',
     mercury: '#F7F7F7',
+    onahau: '#CCE5FF',
     transparent: 'inherit',
     white: '#FFFFFF'
   },
