@@ -12,7 +12,8 @@ export const Information = styled.div`
 `
 export const Title = styled.h2`
 `
-
+export const Paragraph = styled.p`
+`
 export const Container = styled.div`
   position: relative;
   width: 550px;
@@ -36,10 +37,13 @@ export const Container = styled.div`
   }
 `
 export const Paper = styled.div`
-  background:  ${({ theme }) => theme.colors.white};
+  background: #fff3cc;
   position: relative;
   width: 90%;
-  height: 100%;
+  height: ${({ showLetter }) => showLetter ? '200px' : '100%'};
+  top: ${({ showLetter }) => showLetter ? '-50%' : '0'};
+  transition: all 0.5s;
+
   z-index: 1;
   border-radius: 5px;
 `

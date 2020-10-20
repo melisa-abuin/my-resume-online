@@ -1,4 +1,4 @@
-import { Container, Information,  Paper, Section, Shape, Title } from './styles'
+import { Container, Information, Paragraph, Paper, Section, Shape, Title } from './styles'
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Button } from '../../common'
@@ -11,12 +11,13 @@ console.log(letter)
   return (
     <Section>
       <Information>
-        <Title>About me</Title>
-        <Button onClick={() => setLetter(!letter)} >show letter</Button>
+        <Title>Hi! I'm Melisa</Title>
+        <Paragraph>Let me introduce myself:</Paragraph>
+        <Button onClick={() => setLetter(!letter)} >{letter ? "hide letter": "show letter"}</Button>
       </Information>
       <Container>
         <Shape />
-        <Paper>About meeeee</Paper>
+        <Paper showLetter={letter} >About meeeee</Paper>
       </Container>
     </Section>
   )
