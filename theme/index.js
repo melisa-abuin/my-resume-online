@@ -7,8 +7,10 @@ const theme = {
     black: '#000000',
     cobalt: '#003DB3',
     gray: '#333333',
+    malibu: '#66B0FF',
     mercury: '#F7F7F7',
     onahau: '#CCE5FF',
+    sail: '#80bdff',
     transparent: 'inherit',
     white: '#FFFFFF'
   },
