@@ -1,4 +1,4 @@
-import { Body, Card, Icon, Title, Wrapper } from './styles'
+import { Body, Card, Icon, ImageContaier, Title, Wrapper } from './styles'
 import { useTranslation } from 'react-i18next'
 import { PageSection } from '../../common'
 
@@ -9,18 +9,24 @@ export default function Summary() {
     <PageSection>
       <Wrapper>
         <Card>
-          <Icon src="/education-icon.png" />
-          <Title>{t("summary.education")}</Title>
+          <ImageContaier>
+            <Icon url="/education-image.jpg" />
+            <Title>{t("summary.education")}</Title>
+          </ImageContaier>
           <Body>{t("summary.education-description")}</Body>
         </Card>
         <Card>
-          <Icon src="/work-experience-icon.png" />
-          <Title>{t("summary.work")}</Title>
+          <ImageContaier>
+            <Icon url="/work-image.jpg" />
+            <Title>{t("summary.work")}</Title>
+          </ImageContaier>
           <Body>{t("summary.work-description")}</Body>
         </Card>
         <Card>
-          <Icon src="/skills-icon.png" />
-          <Title>{t("summary.skills")}</Title>
+          <ImageContaier>
+            <Icon url="/skills-image.jpg" />
+            <Title>{t("summary.skills")}</Title>
+          </ImageContaier>
           <Body>{t("summary.skills-description")}</Body>
         </Card>
       </Wrapper>

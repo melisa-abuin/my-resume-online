@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import MediaQueries from '../../media-queries'
 
 export const Body = styled.div`
-  text-align: justify;
+  text-align: center;
+  padding: 10px 15px;
 `
 export const Card = styled.div`
   display: flex;
@@ -15,15 +16,29 @@ export const Card = styled.div`
      width: 80vw;
   `};
 `
-export const Icon = styled.img`
-  height: 100px;
-  width: 100px;
-  filter: invert(45%) sepia(37%) saturate(726%) hue-rotate(154deg) brightness(88%) contrast(91%);
+export const ImageContaier = styled.div`
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    & > div {
+      transform: scale(1.4);
+    }
+  }
 `
-export const LinkImage = styled.img`
-  height: 15px;
-  width: 15px;
-  filter: invert(20%) sepia(99%) saturate(1987%) hue-rotate(211deg) brightness(83%) contrast(115%);
+export const Icon = styled.div`
+  background-image: linear-gradient(to bottom, rgba(100, 100, 100, 0.52), rgba(20, 20, 20, 0.73)), url(${({ url }) => url});
+  position: absolute;
+  background-size: cover;
+  height: 200px;  
+  transition: all 1s;
+  z-index: -1;
+  width: 100%;
 `
 export const Item = styled.a`
   color: ${({ theme }) => theme.colors.cobalt};
@@ -41,6 +56,7 @@ export const Title = styled.p`
   text-align: center;
   font-size: ${({ theme }) => theme.fonts.medium4};
   font-weight: bold;
+  color: ${({ theme }) => theme.colors.white};
 
   ${MediaQueries.mobile`
     font-size: ${({ theme }) => theme.fonts.medium2};

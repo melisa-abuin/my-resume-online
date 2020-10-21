@@ -3,14 +3,14 @@ import MediaQueries from '../../media-queries'
 
 const openClose = keyframes`
   from {
-    &::after {
+    &::after{
       transform: rotateX(0deg);
       z-index: -1;
     }
   }
 
   to {
-    &::after {
+    &::after{
       transform: rotateX(180deg);
       z-index: 2;
     }
@@ -61,11 +61,11 @@ export const Container = styled.div`
   border-radius: 0 0 5px 5px;
   box-shadow: 0 0 1px  ${({ theme }) => theme.colors.malibu} inset;
   z-index: 1;
+  animation: ${openClose} 2s infinite;
 
   &::after{
-    transform: ${({ showLetter }) => showLetter ? 'rotateX(0deg)' : 'rotateX(180deg)'}; 
+    
 		transform-origin: center bottom;
-    z-index: ${({ showLetter }) => showLetter ? '-1' : '2'}; 
     transition: all 1s;
     content: '';
     position: absolute;
