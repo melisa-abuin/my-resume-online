@@ -6,19 +6,19 @@ import { Button } from '../../common'
 
 export default function Envelope() {
   const { t } = useTranslation('common')
-  const [ letter, setLetter ] = useState(true)
-
+  const [ { letter, animation }, setLetter ] = useState({ letter: true, animation: false })
+  
   return (
     <Section>
       <Wrapper>
         <Information>
           <Title>Hi! I'm Melisa</Title>
           <Paragraph>Let me introduce myself:</Paragraph>
-          <Button onClick={() => setLetter(!letter)} >{letter ? "hide letter": "show letter"}</Button>
+          <Button onClick={() => setLetter({ letter: letter, animation: true })} >{letter ? "hide letter": "show letter"}</Button>
         </Information>
-        <Container showLetter={letter}>
+        <Container showLetter={letter} animation={animation}>
           <Shape /> 
-          <Paper showLetter={letter}>
+          <Paper showLetter={letter} animation={animation} onAnimationEnd={() => setLetter({ letter: !letter, animation: false})}>
             <Paragraph>About me</Paragraph>
             <Paragraph> I am a Front-end developer skilled in React. As an almost graduated student with 3 years of experience 
   in software developement I'm an ambitious person who has developed a responsible approach to any task that i 

@@ -3,21 +3,16 @@ import MediaQueries from '../../media-queries'
 
 const openClose = keyframes`
   from {
-    &::after{
-      transform: rotateX(0deg);
-      z-index: -1;
-    }
+    transform: rotateX(0deg);
+    z-index: -1; 
   }
-
   to {
-    &::after{
-      transform: rotateX(180deg);
-      z-index: 2;
-    }
+    transform: rotateX(180deg);
+    z-index: 2;
   }
 `;
 
-const showLetter = keyframes`
+const showHide = keyframes`
   from {
     height: 100%;
     top: 0; 
@@ -61,12 +56,14 @@ export const Container = styled.div`
   border-radius: 0 0 5px 5px;
   box-shadow: 0 0 1px  ${({ theme }) => theme.colors.malibu} inset;
   z-index: 1;
-  animation: ${openClose} 2s infinite;
 
   &::after{
+    ${({ animation, showLetter }) => animation && css`animation: ${openClose} forwards ${showLetter ? '1s': '1s 2s'}`}; 
+    transform: ${({ showLetter }) => showLetter ? 'rotateX(180deg)' : 'rotateX(0deg)'};
+    z-index: ${({ showLetter }) => showLetter ? '2' : '-1'};
+    animation-direction: ${({ showLetter }) => showLetter ? 'reverse' : 'normal'};
     
 		transform-origin: center bottom;
-    transition: all 1s;
     content: '';
     position: absolute;
     width: 0;
@@ -84,9 +81,11 @@ export const Paper = styled.div`
   padding: 10px 20px;
   box-sizing: border-box;
   width: 90%;
-  height: ${({ showLetter }) => showLetter ? '200px' : '100%'};
-  top: ${({ showLetter }) => showLetter ? '-70%' : '0'};
-  transition: all 0.5s;
+  ${({ animation, showLetter }) => animation && css`animation: ${showHide} forwards ${showLetter ? '1s 1.5s': '1s'} `}; 
+  height: ${({ showLetter }) => showLetter ? '100%' : '200px'};
+  top: ${({ showLetter }) => showLetter ? '0':'-70%' };
+  animation-direction: ${({ showLetter }) => showLetter ? 'normal' : 'reverse'};
+  
   overflow: hidden;
   z-index: 1;
   border-radius: 5px;

@@ -10,9 +10,9 @@ export default function Home() {
     <>
       <component.Navbar />
       <component.MainBanner />
-      <component.Thumbnail />
-      <component.Summary />
+      <component.Thumbnail />      
       <about.Envelope/>
+      <component.Summary />
       <education.ImagesGrid />
       <knowledge.Banner />
       <experience.Background />
