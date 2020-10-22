@@ -4,6 +4,7 @@ import MediaQueries from '../../media-queries'
 export const Body = styled.div`
   text-align: center;
   padding: 10px 15px;
+  box-sizing: border-box;
 `
 export const Card = styled.div`
   display: flex;
@@ -39,18 +40,6 @@ export const Icon = styled.div`
   transition: all 1s;
   z-index: -1;
   width: 100%;
-`
-export const Item = styled.a`
-  color: ${({ theme }) => theme.colors.cobalt};
-  font-size: ${({ theme }) => theme.fonts.small8};
-  font-weight: bold;
-  cursor: pointer;
-  align-self: flex-end;
-  margin-top: 20px;
-
-  ${MediaQueries.mobile`
-    font-size: ${({ theme }) => theme.fonts.small6};
-  `};
 `
 export const Title = styled.p`
   text-align: center;
