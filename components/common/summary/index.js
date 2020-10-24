@@ -2,33 +2,39 @@ import { Body, Card, Icon, ImageContaier, Title, Wrapper } from './styles'
 import { useTranslation } from 'react-i18next'
 import { PageSection } from '..'
 
+const data = [
+  {
+    image: '/education-image.jpg',
+    title: 'summary.education',
+    body: 'summary.education-description'
+  },
+  {
+    image: '/education-image.jpg',
+    title: 'summary.work',
+    body: 'summary.work-description'
+  },
+  {
+    image: '/skills-image.jpg',
+    title: 'summary.skills',
+    body: 'summary.skills-description'
+  }
+]
+
 export default function Summary() {
   const { t } = useTranslation('common')
 
   return (
     <PageSection>
       <Wrapper>
-        <Card>
-          <ImageContaier>
-            <Icon url="/education-image.jpg" />
-            <Title>{t("summary.education")}</Title>
-          </ImageContaier>
-          <Body>{t("summary.education-description")}</Body>
-        </Card>
-        <Card>
-          <ImageContaier>
-            <Icon url="/work-image.jpg" />
-            <Title>{t("summary.work")}</Title>
-          </ImageContaier>
-          <Body>{t("summary.work-description")}</Body>
-        </Card>
-        <Card>
-          <ImageContaier>
-            <Icon url="/skills-image.jpg" />
-            <Title>{t("summary.skills")}</Title>
-          </ImageContaier>
-          <Body>{t("summary.skills-description")}</Body>
-        </Card>
+        {data.map(({ image, title, body }, index ) => 
+          <Card key={index}>
+            <ImageContaier>
+              <Icon url={image} />
+              <Title>{t(title)}</Title>
+            </ImageContaier>
+            <Body>{t(body)}</Body>
+          </Card>
+        )}
       </Wrapper>
     </PageSection>
   )
