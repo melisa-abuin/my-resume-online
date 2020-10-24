@@ -14,7 +14,7 @@ export const LinkImage = styled.img`
 `
 export const Item = styled.label`
   color: ${({ theme }) => theme.colors.white};
-
+  cursor: pointer;
   ${MediaQueries.mobile`
     display: none;
   `};

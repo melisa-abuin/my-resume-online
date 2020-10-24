@@ -1,6 +1,6 @@
 import { Body, Card, Icon, ImageContaier, Title, Wrapper } from './styles'
 import { useTranslation } from 'react-i18next'
-import { PageSection } from '../../common'
+import { PageSection } from '..'
 
 export default function Summary() {
   const { t } = useTranslation('common')

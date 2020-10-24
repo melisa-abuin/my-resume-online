@@ -1,4 +1,4 @@
-import * as component from '../components/homepage'
+import * as component from '../components/common'
 import * as education from '../components/education-section'
 import * as knowledge from '../components/knowledge-section'
 import * as experience from '../components/work-experience-section'
