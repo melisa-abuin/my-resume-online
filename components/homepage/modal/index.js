@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes, { string } from 'prop-types'
 import { Button, Container, Content, Header, Icon, PageContainer, Title } from './styles'
 import { useTranslation } from 'react-i18next'
 

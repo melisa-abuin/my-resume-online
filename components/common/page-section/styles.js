@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   overflow: hidden;
+
   & > div {
     width: 100%;
     max-width: 1300px;
