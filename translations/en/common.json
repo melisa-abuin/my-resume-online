@@ -24,7 +24,8 @@
     "repository": "Repository",
     "mail-user": "melisa.abuin@gmail.com",
     "aboutme": "About Me",
-    "close": "close"
+    "close": "close",
+    "download-pdf": "Download PDF resume"
   },
   "knowledge": {
     "title": "Always looking for growing",

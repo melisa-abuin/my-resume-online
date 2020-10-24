@@ -8,6 +8,7 @@ export const StyledButton = styled.button`
   padding: 10px 20px;
   cursor: pointer;
   transition: all 0.2s;
+  outline: none;
 
   &:hover{
     color: ${({ theme }) => theme.colors.azure};

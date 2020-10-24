@@ -1,26 +1,13 @@
-import { Container, Item } from './styles'
-import React, { useState } from 'react'
-import { Modal } from '../'
-import Link from 'next/link'
+import { Container, Link } from './styles'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function Navbar() {
-  const [ modal, setModal ] = useState(false)
-
-  function handleClick(modal) {
-    const body = document.body
-    modal ? body.classList.remove('no-scroll') :  body.classList.add('no-scroll') 
-    setModal(!modal)
-  }
+  const { t } = useTranslation('common')
   
   return (
-    <>
-      <Container>
-        <Item onClick={() => handleClick(modal)}>About Me</Item>
-        <Link href="/" passHref>
-          <Item>Download PDF resume</Item>
-        </Link>
-      </Container>
-      {modal && <Modal modalState={modal} onClick={handleClick} />}
-    </>
+    <Container>
+      <Link href="/resume-abuin-melisa.pdf" target="_blank" download >{t('general.download-pdf')}</Link>
+    </Container>
   )
 }

@@ -1,14 +1,19 @@
 import { StyledButton } from './styles'
 import PropTypes from 'prop-types'
 
-export default function Button(text) {
-    return (
-      <StyledButton>
-        {text}
-      </StyledButton>
-    )
+export default function Button({ children, onClick }) {
+
+  function hadleClick() {
+    onClick()
+  }
+
+  return (
+    <StyledButton onClick={() => hadleClick()}>
+      {children}
+    </StyledButton>
+  )
 }
 
 Button.propTypes = {
-  text: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired
 }
