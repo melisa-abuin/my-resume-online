@@ -1,6 +1,7 @@
-See the web application: https://my-resume-online-git-develop.mel-a.vercel.app/
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Resume Online
+  * This is a web page that presents an online version of my resume, the objective of this project is to show my experience and the way I work at the same time.
+  * To see the web aplication follow this [Link](https://my-resume-abuin-melisa.vercel.app/)
+  
 
 ## Getting Started
 
@@ -12,23 +13,33 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technolgies 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Javascript
+- CSS
+- HTML
+
+## Frameworks and libraries
+
+- Next.js
+- React.js
+- Styled-components
+- Jest
+- Enzyme
 
 ## Colors
 
-Colors names found in 'name that color' http://chir.ag/projects/name-that-color
+- Colors names found in 'name that color' http://chir.ag/projects/name-that-color
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- This application is conected and hosted with Vercel
 
 ## Testing
 
-npm test -> for run tests suites and update snapshots
+- This app is tested using Jest and Enzyme. Also coverage is over 97%!
 
-npm test -- --coverage to check coverage of testing
+## Contributions
 
+* Contributions are welcome. Just create a Fork ([How to do it](http://kbroman.org/github_tutorial/pages/fork.html)), and the open a PR to discuss the changes.
+* Please check coverage in every change you add!
