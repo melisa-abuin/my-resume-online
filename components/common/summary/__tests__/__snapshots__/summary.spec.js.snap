@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`summary renders correctly 1`] = `ShallowWrapper {}`;
+exports[`Summary summary renders correctly 1`] = `ShallowWrapper {}`;
+
+exports[`Summary summary renders theme correctly 1`] = `ReactWrapper {}`;

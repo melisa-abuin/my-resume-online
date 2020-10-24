@@ -29,7 +29,7 @@ export const Image = styled.img`
     width: 150px;
   `};
 `
-export const Wrapper =  styled(PageSection)`
+export const Wrapper = styled(PageSection)`
   position: relative;
   padding: 80px 0;
   background-color:  ${({ theme }) => theme.colors.onahau};

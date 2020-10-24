@@ -2,7 +2,7 @@ import { Container , Description, Image, Title, Wrapper } from './styles'
 import Gallery from '../gallery'
 import { useTranslation } from 'react-i18next'
 
-export default function Banner() {
+const Banner = () => {
   const { t } = useTranslation('common')
     return (
       <Wrapper>
@@ -15,3 +15,6 @@ export default function Banner() {
       </Wrapper>
     )
 }
+
+
+export default Banner

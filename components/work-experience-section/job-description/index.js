@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next'
 
-export default function JobDescription({ title, description, additionalMargin }) {
+const JobDescription = ({ title, description, additionalMargin }) => {
   const { t } = useTranslation('common')
 
   return (
@@ -22,3 +22,5 @@ JobDescription.propTypes = {
   description: PropTypes.string.isRequired,
   additionalMargin: PropTypes.number
 }
+
+export default JobDescription

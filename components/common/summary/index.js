@@ -20,7 +20,7 @@ const data = [
   }
 ]
 
-export default function Summary() {
+const Summary = () => {
   const { t } = useTranslation('common')
 
   return (
@@ -39,3 +39,5 @@ export default function Summary() {
     </PageSection>
   )
 }
+
+export default Summary

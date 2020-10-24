@@ -1,6 +1,6 @@
 import { Border, Container, Image } from './styles'
 
-export default function Thumbnail() {
+const Thumbnail = () => {
   return (
     <Container>
       <Border>
@@ -9,3 +9,5 @@ export default function Thumbnail() {
     </Container>
   )
 }
+
+export default Thumbnail

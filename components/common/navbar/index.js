@@ -2,7 +2,7 @@ import { Container, Link } from './styles'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
-export default function Navbar() {
+const Navbar = () => {
   const { t } = useTranslation('common')
   
   return (
@@ -11,3 +11,5 @@ export default function Navbar() {
     </Container>
   )
 }
+
+export default Navbar
