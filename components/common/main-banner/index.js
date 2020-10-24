@@ -1,7 +1,7 @@
 import { Container, Image, Subtitle, Title } from './styles'
 import { useTranslation } from 'react-i18next'
 
-export default function MainBanner() {
+const MainBanner = () => {
   const { t } = useTranslation('common')
 
     return (
@@ -12,3 +12,5 @@ export default function MainBanner() {
       </Container>
     )
 }
+
+export default MainBanner

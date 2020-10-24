@@ -1,11 +1,12 @@
-import PropTypes, { string } from 'prop-types'
-import { Button, Container, Content, Header, Icon, PageContainer, Title } from './styles'
+import PropTypes from 'prop-types'
+import { Container, Content, Header, Icon, PageContainer, Title } from './styles'
 import { useTranslation } from 'react-i18next'
+import { Button } from '..'
 
 const Modal = ({ onClick, modalState, title, body }) => {
   const { t } = useTranslation('common')
 
-  function closeModal(event) {
+  const closeModal = event => {
     onClick(event)
   }
 

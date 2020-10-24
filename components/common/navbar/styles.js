@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import MediaQueries from '../../media-queries'
 
 export const Link = styled.a`
   color: ${({ theme }) => theme.colors.white};
@@ -20,4 +21,8 @@ export const Container = styled.div`
   display: flex;
   z-index: 1;
   justify-content: flex-end;
+
+  ${MediaQueries.mobile`
+    justify-content: center;
+  `};
 `

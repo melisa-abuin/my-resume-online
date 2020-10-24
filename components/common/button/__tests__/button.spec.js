@@ -1,4 +1,4 @@
-import { shallow, mount } from 'enzyme'
+import { mount } from 'enzyme'
 import Button from '..'
 import { StyledButton } from '../styles'
 import { ThemeProvider } from "styled-components"
@@ -16,6 +16,8 @@ describe('Button', () => {
         theme,
       },
     })
+
+    expect(button).toMatchSnapshot()
   })
 
   it('onClick method', () => {
