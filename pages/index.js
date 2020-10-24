@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <component.Navbar />
       <component.MainBanner />
-      <component.Thumbnail />
+      <component.Thumbnail />      
       <component.Summary />
       <education.ImagesGrid />
       <knowledge.Banner />
