@@ -14,6 +14,7 @@ export const Card = styled.div`
   width: 30%;
 
   ${MediaQueries.mobile`
+    margin-top: 40px;
      width: 80vw;
   `};
 `

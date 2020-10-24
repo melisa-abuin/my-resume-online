@@ -19,7 +19,7 @@ const showHide = keyframes`
   }
 
   to {
-    height:  200px;
+    height:  400px;
     top:  -70%;
   }
 `;
@@ -29,27 +29,30 @@ export const Section = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 500px;
+  height: 600px;
   align-items: center;
 `
 export const Information = styled.div`
 `
 export const Title = styled.h2`
-  margin-top: 0px;
+  font-size: ${({ theme }) => theme.fonts.small4};
+  font-weight: 300px;
 `
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
   max-width: 1000px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 `
 export const Paragraph = styled.p`
+  font-size: ${({ theme }) => theme.fonts.small4};
 `
 export const Container = styled.div`
   position: relative;
-  width: 550px;
-  height: 166px;
+  width: 500px;
+  height: 250px;
   display: flex;
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.malibu};
@@ -69,7 +72,7 @@ export const Container = styled.div`
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-width: 83px 275px;
+    border-width: 125px 250px;
     border-bottom-color:  ${({ theme }) => theme.colors.malibu};
     top: -100%;
     left: 0px;
@@ -82,7 +85,7 @@ export const Paper = styled.div`
   box-sizing: border-box;
   width: 90%;
   ${({ animation, showLetter }) => animation && css`animation: ${showHide} forwards ${showLetter ? '1s 1.5s': '1s'} `}; 
-  height: ${({ showLetter }) => showLetter ? '100%' : '200px'};
+  height: ${({ showLetter }) => showLetter ? '100%' : '400px'};
   top: ${({ showLetter }) => showLetter ? '0':'-70%' };
   animation-direction: ${({ showLetter }) => showLetter ? 'normal' : 'reverse'};
   
@@ -95,7 +98,7 @@ export const Shape = styled.div`
   width: 0;
   height: 0;
   border: 0 solid transparent;
-  border-width: 83px 275px;
+  border-width: 125px 250px;
   border-right-color: ${({ theme }) => theme.colors.sail};
   border-left-color:#94c8ff;
   border-bottom-color: #94c8ff;
