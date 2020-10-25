@@ -1,2 +1,8 @@
+export { default as Footer } from './footer'
 export { default as Button } from './button'
 export { default as PageSection } from './page-section'
+export { default as MainBanner } from './main-banner'
+export { default as Modal } from './modal'
+export { default as Navbar } from './navbar'
+export { default as Summary } from './summary'
+export { default as Thumbnail } from './thumbnail'

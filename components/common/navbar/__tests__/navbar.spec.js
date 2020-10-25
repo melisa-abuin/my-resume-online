@@ -1,5 +1,5 @@
 import { shallow, mount } from 'enzyme'
-import Banner from '..'
+import Navbar from '..'
 import { ThemeProvider } from "styled-components"
 import theme from '../../../../theme'
 
@@ -7,20 +7,20 @@ jest.mock('react-i18next', () => ({
   useTranslation: () => ({t: key => key})
 }))
 
-describe('banner', () => {
-  it('banner renders correctly', () => {
-    const banner = shallow(<Banner />)
-    expect(banner).toMatchSnapshot()
+describe('Navbar', () => {
+  it('navbar renders correctly', () => {
+    const navbar = shallow(<Navbar />)
+    expect(navbar).toMatchSnapshot()
     
   })
-
-  it('banner renders theme correctly', () => {
-    const banner = mount(<Banner />, {
+  
+  it('navbar renders theme correctly', () => {
+    const navbar = mount(<Navbar />, {
       wrappingComponent: ThemeProvider,
       wrappingComponentProps: {
         theme,
       },
     })
-    expect(banner).toMatchSnapshot()
+    expect(navbar).toMatchSnapshot()
   })
 })

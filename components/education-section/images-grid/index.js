@@ -16,27 +16,27 @@ const data = [
   }
 ]
 
-export default function ImagesGrid() {
+const ImagesGrid = () => {
   const [ visible, setVisible ] = useState(0)  
 
   const numberOfItems = data.length
   const { t } = useTranslation('common')
-
+  
   return (
     <Wrapper>
       <Container>
         <Arrow onClick={() => setVisible(visible === 0  ? numberOfItems - 1 : visible - 1)} />
         <Carousel>
-          {data.map(( item, index ) => 
+          {data.map(({ title, description, image }, index ) => 
             <Selected key={index} visible={index === visible}>
               <Column>
-                <Title>{t(item.title)}</Title>
-                <Paragraph>{t(item.description)}</Paragraph>
+                <Title>{t(title)}</Title>
+                <Paragraph>{t(description)}</Paragraph>
               </Column>
               <Column>
                 <Circle>
                   <LinearCircle>
-                    <Image src={item.image} alt='main-image' />
+                    <Image src={image} alt='main-image' />
                   </LinearCircle>
                 </Circle>
               </Column>
@@ -48,3 +48,5 @@ export default function ImagesGrid() {
     </Wrapper>
   )
 }
+
+export default ImagesGrid;

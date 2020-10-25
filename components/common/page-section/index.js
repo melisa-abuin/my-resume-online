@@ -1,15 +1,15 @@
 import { Wrapper } from './styles'
 import PropTypes from 'prop-types'
 
-export default function PageSection({ className, children }) {
-    return (
-      <Wrapper className={className} >
-          {children}
-      </Wrapper>
-      
-    )
-}
+const PageSection = ({ className, children }) => (
+  <Wrapper className={className} >
+    {children}
+  </Wrapper>
+)
 
 PageSection.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string
 }
+
+export default PageSection
