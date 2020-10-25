@@ -6,7 +6,7 @@ const Banner = () => {
   const { t } = useTranslation('common')
     return (
       <Wrapper>
-        <Image />
+        <Image url="/desk-image.jpg" />
         <Container>
           <Title>{t('knowledge.title')}</Title>
           <Description>{t('knowledge.body')}</Description>

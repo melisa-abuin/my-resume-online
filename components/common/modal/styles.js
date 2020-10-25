@@ -4,7 +4,7 @@ import MediaQueries from '../../media-queries'
 export const PageContainer = styled.div`
   z-index: 2;
   position: absolute;
-  background: rgba(70, 70, 70, 0.4);
+  background: ${({ theme }) => theme.shadows.tundora04};
   display: flex;
   align-items: center;
   justify-content: center;

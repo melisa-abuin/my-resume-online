@@ -34,7 +34,9 @@ export const ImageContaier = styled.div`
   }
 `
 export const Icon = styled.div`
-  background-image: linear-gradient(to bottom, rgba(100, 100, 100, 0.52), rgba(20, 20, 20, 0.73)), url(${({ url }) => url});
+  background-image: ${({ theme, url }) => `linear-gradient(to bottom, 
+    ${theme.shadows.dovegray052}, 
+    ${theme.shadows.codgray073}), url(${url})`};
   position: absolute;
   background-size: cover;
   height: 200px;  
