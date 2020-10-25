@@ -2,12 +2,14 @@ import { shallow, mount } from 'enzyme'
 import ImagesGrid from '..'
 import { ThemeProvider } from "styled-components"
 import theme from '../../../../theme'
+import React from 'react'
 
 jest.mock('react-i18next', () => ({
   useTranslation: () => ({t: key => key})
 }))
 
 describe('imagesGrid', () => {
+
   it('imagesGrid renders correctly', () => {
     const imagesGrid = shallow(<ImagesGrid />)
     expect(imagesGrid).toMatchSnapshot()
@@ -23,5 +25,6 @@ describe('imagesGrid', () => {
     })
     expect(imagesGrid).toMatchSnapshot()
   })
+
 })
 

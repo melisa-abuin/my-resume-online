@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`banner renders correctly 1`] = `ShallowWrapper {}`;
+exports[`banner banner renders correctly 1`] = `ShallowWrapper {}`;
+
+exports[`banner banner renders theme correctly 1`] = `ReactWrapper {}`;
