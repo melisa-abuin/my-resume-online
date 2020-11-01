@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { Button, Container, Content, Header, Icon, PageContainer, Title } from './styles'
+import { Container, Content, Header, Icon, PageContainer, Title } from './styles'
 import { useTranslation } from 'react-i18next'
 import { Button } from '..'
 
