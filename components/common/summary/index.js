@@ -9,7 +9,7 @@ const data = [
     body: 'summary.education-description'
   },
   {
-    image: '/education-image.jpg',
+    image: '/work-image.jpg',
     title: 'summary.work',
     body: 'summary.work-description'
   },
