@@ -6,22 +6,19 @@ import React from 'react'
 const jobs = [
   { 
     title: 'jobs.jpmorgan-title', 
-    description: 'jobs.jpmorgan-description',
-    tags: []
+    description: 'jobs.jpmorgan-description'
   },
   { 
     title: 'jobs.valtech-title', 
-    description: 'jobs.valtech-description' ,
-    tags: []
+    description: 'jobs.valtech-description' 
   },
   { 
     title: 'jobs.gyl-title', 
-    description: 'jobs.gyl-description',
-    tags: []
+    description: 'jobs.gyl-description'
   }
 ]
 
-export default function Background() {
+const Background = () => {
 
   return (
     <Wrapper>
@@ -33,8 +30,8 @@ export default function Background() {
         ))}
         </Group>
     </Container> 
-
-
     </Wrapper>
   )
 }
+
+export default Background

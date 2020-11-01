@@ -38,7 +38,12 @@ export const Image = styled.div`
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(39, 39, 39,0.7) 0%, rgba(39, 39, 39,0.7) 100%), url('/desk-image.jpg');
+  background-image: ${({ theme, url }) => 
+    `linear-gradient(to bottom, 
+    ${theme.shadows.shaft07} 0%,
+    ${theme.shadows.shaft07} 100%),
+    url(${url});
+    `};
   position: absolute;
   z-index: 0;
   background-position: top;

@@ -1,6 +1,6 @@
 import { Container, Image } from './styles'
 
-export default function Gallery() {
+const Gallery = () => {
     return (
       <Container>
         <Image third left src='/saga-course.png'/>
@@ -11,3 +11,4 @@ export default function Gallery() {
       </Container>
     )
 }
+export default Gallery

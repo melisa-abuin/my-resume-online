@@ -14,6 +14,12 @@ const theme = {
     transparent: 'inherit',
     white: '#FFFFFF'
   },
+  shadows: {
+    codgray073: 'rgba(20, 20, 20, 0.73)',
+    dovegray052: 'rgba(100, 100, 100, 0.52)',
+    shaft07: 'rgba(39, 39, 39,0.7)',
+    tundora04: 'rgba(70, 70, 70, 0.4)',
+  },
   fonts: {
     small0: '10px',
     small4: '14px',

@@ -1,9 +1,9 @@
 import { StyledButton } from './styles'
 import PropTypes from 'prop-types'
 
-export default function Button({ children, onClick }) {
+const Button = ({ children, onClick }) => {
 
-  function hadleClick() {
+  const hadleClick = () => {
     onClick()
   }
 
@@ -15,5 +15,8 @@ export default function Button({ children, onClick }) {
 }
 
 Button.propTypes = {
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
 }
+
+export default Button
